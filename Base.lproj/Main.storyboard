@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="KISSCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="searchBackground2" translatesAutoresizingMaskIntoConstraints="NO" id="bFV-es-oc5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="668"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImL-n1-ZDC">
+                                <rect key="frame" x="224" y="170" width="30" height="30"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cqZ-gC-1jZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siI-sB-PHt">
+                                <rect key="frame" x="281" y="212" width="40" height="30"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KCw-uP-bCq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFn-QW-jFD">
+                                <rect key="frame" x="286" y="134" width="30" height="30"/>
+                                <state key="normal" title="Set">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DwP-v8-OIQ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="siY-sE-cUk">
+                                <rect key="frame" x="249" y="87" width="103" height="30"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6w-Iu-wlz">
+                                <rect key="frame" x="223" y="51" width="154" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Trm-uS-hgw">
+                                <rect key="frame" x="341" y="170" width="59" height="30"/>
+                                <state key="normal" title="Subtract">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="subtractButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EuA-8R-8pc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyr-4d-uGX">
+                                <rect key="frame" x="360" y="91" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zab-yk-coK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" image="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="ImL-n1-ZDC" firstAttribute="top" secondItem="xFn-QW-jFD" secondAttribute="bottom" constant="6" id="746-RV-qIl"/>
+                            <constraint firstAttribute="centerX" secondItem="siI-sB-PHt" secondAttribute="centerX" id="7aZ-0c-XdY"/>
+                            <constraint firstItem="Trm-uS-hgw" firstAttribute="leading" secondItem="xFn-QW-jFD" secondAttribute="trailing" constant="21" id="9DD-Hc-wst"/>
+                            <constraint firstItem="Xyr-4d-uGX" firstAttribute="leading" secondItem="siY-sE-cUk" secondAttribute="trailing" constant="8" id="CKi-ls-3Sq"/>
+                            <constraint firstItem="xFn-QW-jFD" firstAttribute="leading" secondItem="ImL-n1-ZDC" secondAttribute="trailing" constant="32" id="CuK-ZF-lWd"/>
+                            <constraint firstAttribute="centerX" secondItem="xFn-QW-jFD" secondAttribute="centerX" id="Uew-o8-fq5"/>
+                            <constraint firstAttribute="centerX" secondItem="siY-sE-cUk" secondAttribute="centerX" constant="-0.5" id="fJN-GN-xHm"/>
+                            <constraint firstAttribute="centerX" secondItem="y6w-Iu-wlz" secondAttribute="centerX" id="h87-uK-WUc"/>
+                            <constraint firstItem="bFV-es-oc5" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="tlF-1L-Ibe"/>
+                        </constraints>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="AddButton" destination="Trm-uS-hgw" id="weH-wd-AvL"/>
+                        <outlet property="DisplayLabel" destination="y6w-Iu-wlz" id="LKh-Ky-ham"/>
+                        <outlet property="NumTextField" destination="siY-sE-cUk" id="ZQl-Ja-Jh2"/>
+                        <outlet property="ResetButton" destination="siI-sB-PHt" id="PjX-k9-jSG"/>
+                        <outlet property="SetButton" destination="xFn-QW-jFD" id="KHA-CR-Z5R"/>
+                        <outlet property="SubtractButton" destination="siI-sB-PHt" id="10L-gv-Ftl"/>
+                        <outlet property="infoButton" destination="Xyr-4d-uGX" id="tpJ-Vt-pfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="searchBackground2" width="375" height="667"/>
+    </resources>
+</document>
